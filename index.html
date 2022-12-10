@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<!--Allows the page to be compressed for mobile-->
+<body class="container-fluid">
+
+    <nav class="navbar navbar-expand-sm navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">The Blogosphere</a>
+
+        <!--Creates the "burger icon"/mobile friendly menu dropdown-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+                <!--This creates the navigation bar with the links to other sections of site-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Page_2.html">About Me</a>
+                </li>
+
+                <!--Creates dropdown menu with list of items/or links that can be inputted on-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Other Topics
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="index.html"> Hot Topics</a>
+                    <a class="dropdown-item" href="Page_2.html"> Cultural News</a>
+                    <a class="dropdown-item" href="index.html"> Global News</a>
+                    <a class="dropdown-item" href="Page_2.html"> Space stuff</a>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!--a div for the header -->
+    
+    <div class=header><h1>Welcome to Blogosphere!
+        <span class="badge badge-secondary">New</span></h1>
+    </div>
+
+    <!--Border-->
+<hr class="border border-primary border-3 opacity-75">
+
+    <div class="container-fluid">
+        <p>This site is like the AP News of blogs, ya know - the hard hitting, factual, investigative kinda blogs. Sign up for our substack below!</p>
+    </div>
+
+<br>
+<br>
+
+<!--Table to depict Bootstrap used-->
+    <div class="container">
+     <table class="table table-bordered">
+        <tr class="col-1">
+            <th>Top Trending Stories</th>
+            <th>Top Cryptos</th>
+        </tr>
+        <tr class="col-1">
+            <td>Is Cthulhu Real?</td>
+            <td>Bitcoin</td>
+        </tr>
+        <tr class="col-1">
+            <td>Is Washington, D.C. actually sinking?</td>
+            <td>Dogecoin</td>
+        </tr>
+        <tr class="col-1">
+            <td>Did Oumuamua ever really leave our Solar System?</td>
+            <td>Etherum</td>
+        </tr>
+    </table>
+</div>
+
+<br>
+<br>
+    <!--Form to depict Boostrap was used-->
+
+    <form>
+        <div class="form-group">
+          <label><strong>Substack Sign up form.</strong></label>
+          <br>
+          <label for="exampleInputEmail1">Please add your email address.</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We may share your email with third parties.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">To remove yourself from third party signups check here.</label>
+        </div>
+        <button type="submit" class="btn btn-outline-primary btn-sm">Submit</button>
+      </form>
+      
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+<br>
+<br>
+<footer><p> Copyright of JG Productions™. All Rights Reserved.</p></footer>
+</body>
+</html>
